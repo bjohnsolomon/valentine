@@ -14,15 +14,12 @@ document.getElementById('ticket-form').addEventListener('submit', function(event
         totalAmount = 0; // Free ticket if coupon is valid
     }
 
-    // Generate ticket details
-    const ticketDetails = `
-        Name: ${name}<br>
-        Email: ${email}<br>
-        Ticket Quantity: ${quantity}<br>
-        Total Price: $${totalAmount === 0 ? "Free" : totalAmount}
-    `;
+    // Populate the ticket visual
+    document.getElementById('ticket-name').textContent = name;
+    document.getElementById('ticket-email').textContent = email;
+    document.getElementById('ticket-quantity').textContent = quantity;
+    document.getElementById('ticket-price').textContent = totalAmount === 0 ? "Free" : `$${totalAmount}`;
 
-    // Display the ticket
-    document.getElementById('ticket-details').innerHTML = ticketDetails;
-    document.getElementById('ticket-display').style.display = 'block';
+    // Show the ticket
+    document.getElementById('ticket-visual').style.display = 'block';
 });
