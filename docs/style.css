@@ -56,13 +56,42 @@ button:hover {
     background-color: #218838;
 }
 
-#ticket-display {
+#ticket-visual {
     margin-top: 20px;
     text-align: center;
 }
 
-#ticket-details {
-    font-size: 16px;
-    font-weight: bold;
+.ticket {
+    border: 2px dashed #ff6f61;
+    border-radius: 10px;
+    background: #ffe6e6;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
     color: #333;
+}
+
+.ticket h3 {
+    font-size: 20px;
+    color: #d6336c;
+    margin-bottom: 10px;
+}
+
+.ticket p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.qr-code {
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 10px auto;
+    color: #999;
+    font-size: 12px;
 }
